@@ -6,8 +6,8 @@ get '/' do
 end
 
 post '/' do
-	message = encoder(params[:text],params[:key])
-	erb :index, :locals => {:message => message}
+	@message = encoder(params[:text],params[:key])
+	erb :index
 end
 
 def encoder(message, key)
