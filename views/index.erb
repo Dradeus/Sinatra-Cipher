@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Caesar Cipher</title>
+	</head>
+	<body>
+		<h3>This is a basic cryptography app in which every letter in your input is switched with one X amount of places away from it in the alphabet, as dictated by the number you input as a key/offset</h3>
+
+		<form method="POST" action="/">
+			
+			<label for="text">Message:</label>
+			<input type="text" name="text" placeholder="input goes here" />
+
+			<label for="key">Key:</label>
+			<input type="number" name="key" placeholder="your offset here" />
+			<input type="submit" value="encode" />
+
+		</form>
+			<div>
+				<% if message %>
+					<h2>Your Message:</h2>
+					<%= message %>
+				<% end %>
+			</div>
+	</body>
+</html>
